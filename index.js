@@ -61,7 +61,7 @@ function displayEditForm(){
   let allIngredients = [];
 
   let ingredientNodes = document.getElementsByName('ingredients');
-  for (var i=0; i < ingredientNodes.length; i++){
+  for (var i=0; i < ingredientNodes.length ; i++){
     allIngredients.push(ingredientNodes[i].innerHTML);
   }
 
