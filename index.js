@@ -46,7 +46,7 @@ function handleSubmit(){
   let recipeTemplateFn = Handlebars.compile(recipeTemplate);
   let recipeHTML = recipeTemplateFn(recipe);
 
-  document.getElementById('main').innerHTML += recipeHTML;
+  document.getElementById('main').innerHTML = recipeHTML;
 }
 
 
