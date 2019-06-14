@@ -62,7 +62,7 @@ function displayEditForm(){
 
   let ingredientNodes = document.getElementsByName('ingredients');
   for (var i=0; i < ingredientNodes.length; i++){
-    allIngredients.push(ingredientNodes[i].value);
+    allIngredients.push(ingredientNodes[i].innerHTML);
   }
 
   recipe.ingredients = allIngredients;
