@@ -6,8 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function init() {
   //put any page initialization/handlebars initialization here
-  var recipeFormTemplate = document.getElementById('recipe-form-template').innerHTML
-  var recipeFormTemplateFn = Handlebars.compile(recipeFormTemplate);
+  var recipeFormTemplateFn = Handlebars.compile(document.getElementById('recipe-form-template').innerHTML);
   var formHTML = recipeFormTemplateFn({
     ingredients:['','','','','']
   });
