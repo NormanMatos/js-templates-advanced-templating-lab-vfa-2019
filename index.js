@@ -8,8 +8,6 @@ function init() {
   //put any page initialization/handlebars initialization here
   var recipeFormTemplateFn = Handlebars.compile(document.getElementById('recipe-form-template').innerHTML);
   var formHTML = recipeFormTemplateFn({
-    name: '',
-    recipeDescr: '',
     ingredients:['','','','','']
   });
   var mainContainer = document.getElementsByTagName('main')[0];
