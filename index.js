@@ -13,10 +13,7 @@ function init() {
   var mainContainer = document.getElementsByTagName('main')[0];
   mainContainer.innerHTML = formHTML;
 
-
-  //move this to where 'this' object is defined?
   Handlebars.registerPartial('recipeDetailsPartial',document.getElementById('recipe-details-partial').innerHTML);
-
   Handlebars.registerHelper('displayIngredient',function(ingredient){
     let newIngredient = '<li name="ingredients">'+ingredient+'</li>';
     return new Handlebars.SafeString(newIngredient);
